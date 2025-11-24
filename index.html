@@ -1,102 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andreas Hölzl</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #eaeaea;
-        }
-        .container {
-            display: flex;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            border-radius: 8px;
-            overflow: hidden;
-        }
-        .sidebar {
-            width: 250px;
-            padding: 20px;
-            background-color: #f4f4f4;
-            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
-            box-sizing: border-box;
-            text-align: center;
-        }
-        .sidebar img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-        }
-        .sidebar h1 {
-            font-size: 24px;
-            margin: 10px 0;
-        }
-        .sidebar p {
-            font-size: 14px;
-            color: #555;
-        }
-        .sidebar a {
-            display: block;
-            margin: 10px 0;
-            color: #0073aa;
-            text-decoration: none;
-        }
-        .content {
-            width: 600px;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-        .article {
-            margin-bottom: 40px;
-        }
-        .article h2 {
-            font-size: 22px;
-            margin: 10px 0;
-        }
-        .article p {
-            font-size: 14px;
-            color: #777;
-        }
-    </style>
+    <meta name="description"
+        content="Andreas Hölzl - Physics B.Sc. student at Heidelberg University. Portfolio and Resume.">
+    <title>Andreas Hölzl | Physics Student</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
     <div class="container">
-        <div class="sidebar">
-            <img src="profile.png" alt="Profile Picture">
+        <aside class="sidebar">
+            <img src="assets/img/profile.png" alt="Andreas Hölzl" class="profile-img">
             <h1>Andreas Hölzl</h1>
-            <p>Physics B.Sc. student at Heidelberg University. Interested in physics and machine learning</p>
-            <nav>
-                <a href="CV.html">CV</a>
-                <a href="https://heibox.uni-heidelberg.de/d/73bf221c23c94793b98c/">Lecture Notes Stat.Phys</a>
-                <a href="https://heibox.uni-heidelberg.de/d/8a7f34f8f89045d7a6a3/">cheat-sheets</a>
-                <a href="impressum.html">impressum</a>
-            </nav>  
-        </div>
-        <div class="content">
-            <div class="article">
-                <p>July 9, 2024</p>
-                <h2>Bachelor Thesis: Generating Z-Boson Events with Conditional Flow Matching and Consistency Models</h2>
+            <p>Physics B.Sc. student at Heidelberg University.<br>Interested in physics and machine learning.</p>
+            <nav class="nav-links">
+                <a href="cv.html" class="nav-btn">Curriculum Vitae</a>
+                <a href="lectures.html" class="nav-btn">Lecture Notes</a>
+                <a href="cheat-sheets.html" class="nav-btn">Cheat Sheets</a>
+                <a href="impressum.html" class="nav-btn">Impressum</a>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <h2 class="section-title">Latest Updates</h2>
+
+            <article class="article">
+                <span class="article-date">July 9, 2024</span>
+                <h2>Bachelor Thesis: Generating Z-Boson Events with Conditional Flow Matching and Consistency Models
+                </h2>
                 <p><a href="https://www.thphys.uni-heidelberg.de/~plehn/">Supervised by Prof. Tilman Plehn</a></p>
-            </div>
-            <div class="article">
-                <p>April 2024</p>
-                <h2>General Relativity</h2>
-                <p>Currently attending the General Relativity lecture</p>
-            </div>
-            <div class="article">
-                <p>June 2024</p>
+            </article>
+
+            <article class="article">
+                <span class="article-date">June 2024</span>
                 <h2>Seminar: Astrophysics</h2>
-                <p>Gave a presentation about gravitational waves</p>
-            </div>
-        </div>
+                <p>Gave a presentation about gravitational waves.</p>
+            </article>
+
+            <article class="article">
+                <span class="article-date">April 2024</span>
+                <h2>General Relativity</h2>
+                <p>Currently attending the General Relativity lecture.</p>
+            </article>
+        </main>
     </div>
 </body>
+
 </html>

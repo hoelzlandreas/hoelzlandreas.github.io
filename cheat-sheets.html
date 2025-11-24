@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,19 +15,24 @@
             padding: 20px;
             background-color: #f0f0f0;
         }
+
         .pdf-container {
             width: 100%;
-            max-width: 800px; /* Adjust to your preferred max width */
+            max-width: 800px;
+            /* Adjust to your preferred max width */
             overflow-y: auto;
             display: flex;
             flex-direction: column;
             gap: 20px;
         }
+
         .pdf-viewer {
             width: 100%;
-            padding-top: 141.4%; /* 1:1.414 aspect ratio for A4 */
+            padding-top: 141.4%;
+            /* 1:1.414 aspect ratio for A4 */
             position: relative;
         }
+
         .pdf-viewer embed {
             position: absolute;
             top: 0;
@@ -36,13 +42,14 @@
         }
     </style>
 </head>
+
 <body>
     <h1>Cheat Sheets</h1>
     <div class="pdf-container">
         <h2>Ex4 exp. particle physics</h2>
         <div class="pdf-viewer">
-            
-            <embed src="/resume/cheat_sheets/Ex4_cheatsheet.pdf" type="application/pdf" />
+
+            <embed src="assets/docs/Ex4_cheatsheet.pdf" type="application/pdf" />
         </div>
         <div class="pdf-viewer">
             <embed src="path/to/your/document2.pdf" type="application/pdf" />
@@ -53,4 +60,5 @@
         <!-- Add more PDFs as needed -->
     </div>
 </body>
+
 </html>
